@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import model.Blog;
 import model.User;
+import utility.CheckBlogPost;
 
 
 @WebServlet(urlPatterns= {"/blog"})
@@ -51,11 +52,23 @@ public class BlogController extends HttpServlet {
 		
 		//create object for CheckBlogPost
 		//store the return value in a boolean variable called checkblog
-		if(checkblog!=null) {
+		CheckBlogPost  check= new CheckBlogPost();
+		boolean checkblog=check.checkBlog(blog);
+		
+		if(checkblog==true) {
 			request.setAttribute("blog", blog);
 			request.setAttribute("user",user);
 			RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/blogView.jsp");
 			rd.forward(request, response);
+		}
+else{
+			
+			request.setAttribute("error", "Your blog cannot be added as it contains offensive words, Please check your blog");
+
+			RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/blogView.jsp");
+			rd.forward(request, response);
+			
+			
 		}
 		
 	}
