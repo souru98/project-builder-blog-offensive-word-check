@@ -2,13 +2,12 @@ package utility;
 
 import model.Blog;
 
-//progression3
 
+
+//class extends offencivewords and implements offensive wordinterface
 public class CheckBlogPost extends OffensiveWordsChecker implements OffensiveWordsInterface
 {
-	String a[]= {"a55hole","acrotomophilia","aeolus","ahole","alabama hot pocket","	alaskan pipeline","anal","anal impaler","anal leakage","analprobe",
-			      "anilingus","anus","apeshit","ar5e","areola", "areole","arian", "arrse", "arse"," arsehole"," aryan","ass", "ass fuck",
-			      		 " ass fuck"," ass hole"};
+	String a[]= {"ass","anal","anal impaler","anal leakage","analprobe","booger","bookie","boong","booobs","boooobs","c-0-c-k","c0cksucker","caca","cacafuego","cahone","camel toe","cameltoe","camgirl","camslut","camwhore","ass fuck"," ass hole","suckass","sucked","sucking","sucks","suicide girls","sultry women"};
 
 	@Override
 	public boolean checkBlogTitle(Blog blog) 

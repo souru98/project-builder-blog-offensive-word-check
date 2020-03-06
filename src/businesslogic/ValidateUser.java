@@ -1,7 +1,7 @@
 package businesslogic;
 
 
-
+//class validate user
 public class ValidateUser {
 
 

@@ -2,7 +2,7 @@ package utility;
 
 import model.Blog;
 
-//progression2
+//interface offensivewordinterface
 
 interface OffensiveWordsInterface
 {
