@@ -4,7 +4,7 @@ import model.Blog;
 
 
 
-//class extends offencivewords and implements offensive wordinterface
+//class extends offensivewords and implements offensive wordinterface
 public class CheckBlogPost extends OffensiveWordsChecker implements OffensiveWordsInterface
 {
 	String a[]= {"ass","anal","anal impaler","anal leakage","analprobe","booger","bookie","boong","booobs","boooobs","c-0-c-k","c0cksucker","caca","cacafuego","cahone","camel toe","cameltoe","camgirl","camslut","camwhore","ass fuck"," ass hole","suckass","sucked","sucking","sucks","suicide girls","sultry women"};
